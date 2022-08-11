@@ -17,22 +17,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">	<!-- Hay que actualizar el codigo CSS -->
 </head>
 <body>
-	<div id = "cabeceraweb" > <!-- Cabecera de la web -->
-			<img 	src = "img/LOGO.png" alt ="Logo SQ20" width=75%;>
+	<div class="topnav">
+		<a href="#" class="logo"><img src="img/LOGO.png" alt="Logo SQ20" width=75%;></a>
+
+		<div id="nav_bar">
+			<a href=SEQUIAL20.html>INICI</a>
+			<a href="CARTA.html">CARTA</a>
+			<a href="MENU.html">MENU</a>
+			<a href="ESMORZARS.html">ESMORZARS</a>
+			<a href="BODEGA.html">BODEGA</a>
+		</div>
+		<!-- Icono del menu. Oculto por defecto -->
+		<a href="javascript:void(0);" class="icon" onclick="MostrarOcultar()">
+			<i class="fa fa-bars">A</i>
+		</a>
 	</div>
-	<!-- Barra de navegacion principal  -->
-	<nav id= "nav_principal">
-			<ul> <!-- Lista desordenada  -->
-				<li><a href="SEQUIAL20.html">INICI</a></li>
-				<li><a href="CARTA.html">CARTA</a></li>
-				<li><a href="MENU.html">MENU</a></li>
-				<li><a href="ESMORZARS.html">ESMORZARS</a></li>
-				<li><a href="BODEGA.html">BODEGA</a></li>
 
-			</ul>
-	</nav>
-
-
+	<script src="js/MostrarOcultar.js"></script>
 <!-- <div class="detalles">
 	<h1>El Sequial20</h1>
 	<p style="text-align: center;">El restaurant Sequial20 està situat a Sueca, capital de la Ribera Baixa. </p>
@@ -68,7 +69,7 @@
 			<p>Mòbil: 686989742</p>
 			<p>Local: 962033838</p>
 
-			<h1>Horari</h1>
+			<h1>HORARI</h1>
 			<p>De Dilluns a Dijous: 8:00h a 17:00h</p>
 			<p>Divendres i Dissabte: 8:00h a 1:00h</p>
 			<p>Diumenge: 9:00h a 17:00h</p>
