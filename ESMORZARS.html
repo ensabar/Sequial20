@@ -15,20 +15,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">	<!-- Hay que actualizar el codigo CSS -->
 </head>
 <body>
-  <div id = "cabeceraweb" > <!-- Cabecera de la web -->
-		<img 	src = "img/LOGO.png" alt ="Logo SQ20" width=75%;>
-  </div>
-  <!-- Barra de navegacion principal  -->
-  <nav id= "nav_principal">
-      <ul> <!-- Lista desordenada  -->
-        <li><a href="SEQUIAL20.html">INICI</a></li>
-        <li><a href="CARTA.html">CARTA</a></li>
-        <li><a href="MENU.html">MENU</a></li>
-        <li><a href="ESMORZARS.html">ESMORZARS</a></li>
-				<li><a href="BODEGA.html">BODEGA</a></li>
+	<div class="topnav">
+		<a href="#" class="logo"><img src="img/LOGO.png" alt="Logo SQ20" width=75%;></a>
 
-      </ul>
-  </nav>
+		<div id="nav_bar">
+			<a href="SEQUIAL20.html">INICI</a>
+			<a href="CARTA.html">CARTA</a>
+			<a href="MENU.html">MENU</a>
+			<a href="ESMORZARS.html">ESMORZARS</a>
+			<a href="BODEGA.html">BODEGA</a>
+		</div>
+		<!-- Icono del menu. Oculto por defecto -->
+		<a href="javascript:void(0);" class="icon" onclick="MostrarOcultar()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<script src="js/MostrarOcultar.js"></script>
 
 <p class="gluten" style="padding-top: 2vw;">De Dilluns a Diumenge 9:00h a 12:00h</p>
 <p class="gluten">DISPOSEM DE PA SENSE GLUTEN</p>

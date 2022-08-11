@@ -10,29 +10,69 @@
 	position: relative;
 
 }
-/* Opciones de la lista desordenada*/
-ul{
-  word-spacing: 1vw; /* 1vw = 1% of viewport width  */
+/* CSS de la barra de navegacion */
+.topnav {
+  overflow: hidden;
+  position: relative; 
+}
+.topnav #nav_bar {
+  opacity:0.75;
   background-color: #7E3E07;
-	font-size: 120%;
+  display: none;/* Oculta la nav_bar inicialmente */
 }
-ul li {
-	display: inline-block; /*Los elementos de la lista salen en la misma linea */
-}
-li a {
-  display: block;
+
+.topnav a {
   color: white;
-  text-align: justify;
-  padding: 0.1vw; /* Define el espacio entre elementos */
-  text-decoration: none; /* Elimina el subrayado del link */
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  display: block;
 }
-/* CSS para los titulos h1 */
+
+/* Estilo del icono del menu */
+.topnav a.icon {
+  background: #7E3E07;
+  opacity: 0.75;
+  display: block;
+  position: absolute;
+  padding: 14px 16px; /* Arriba y abajo, izq y dcha*/
+  right: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+#nav_bar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#nav_bar a{
+  padding: 6px 0px; /* Arriba y abajo, izq y dcha*/
+  border-style: solid;
+  border-top-width: 3px;
+  border-color: #47270C;
+}
+
+.logo {
+  background-color: white;
+  color: white;
+  padding: 14px 16px; /* Arriba y abajo, izq y dcha*/
+}
+/* CSS para los titulos */
 h1 {
  overflow: hidden;
  text-align: center;
  font-size: 30px;
  color: #7E3E07;
 }
+h2{
+  text-align: center;
+  color: #7E3E07;
+  font-size: 24px;
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px dashed #7E3E07;
+  }
+
 /* Para añadir las lineas al lado de los titulos */
 h1:before, h1:after {
  background-color: #7E3E07;
@@ -50,20 +90,4 @@ h1:before {
 h1:after {
  left: 0.5em;
  margin-right: -30%;
-}
-/* CSS Para los titulos h2*/
-h2{
-text-align: center;
-color: #7E3E07;
-font-size: 24px;
-width: 90%;
-margin: auto;
-border-bottom: 2px dashed #7E3E07;
-}
-#nav_principal{
-  display: block;
-  text-align: center;
-}
-#cabeceraweb{
-  text-align: center;
 }
