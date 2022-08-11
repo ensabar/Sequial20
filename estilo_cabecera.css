@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+/* resetea todas las variables de CSS */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	position: relative;
+
+}
+/* Opciones de la lista desordenada*/
+ul{
+  word-spacing: 1vw; /* 1vw = 1% of viewport width  */
+  background-color: #7E3E07;
+	font-size: 120%;
+}
+ul li {
+	display: inline-block; /*Los elementos de la lista salen en la misma linea */
+}
+li a {
+  display: block;
+  color: white;
+  text-align: justify;
+  padding: 0.1vw; /* Define el espacio entre elementos */
+  text-decoration: none; /* Elimina el subrayado del link */
+}
+/* CSS para los titulos h1 */
+h1 {
+ overflow: hidden;
+ text-align: center;
+ font-size: 30px;
+ color: #7E3E07;
+}
+/* Para añadir las lineas al lado de los titulos */
+h1:before, h1:after {
+ background-color: #7E3E07;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 15%;
+}
+h1:before {
+ right: 0.5em;
+ margin-left: -30%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -30%;
+}
+/* CSS Para los titulos h2*/
+h2{
+text-align: center;
+color: #7E3E07;
+font-size: 24px;
+width: 90%;
+margin: auto;
+border-bottom: 2px dashed #7E3E07;
+}
+#nav_principal{
+  display: block;
+  text-align: center;
+}
+#cabeceraweb{
+  text-align: center;
+}

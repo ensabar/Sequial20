@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+/* resetea todas las variables de CSS */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	position: relative;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+	font-family: 'Didact Gothic', sans-serif;
+}
+/*Proximament */
+/*Unificar archiu CSS amb estilo_carta llevant la linia inferior
+i possar els alergens en una llegenda al inferior de la carta */
+p{
+	display: block;
+	background-color: white;
+	width:95%;
+  /*max-width: 99%;*/
+  min-width: 300px;
+	margin: auto; /* Para centrar el texto*/
+	margin-bottom: 0.2rem; /* Margen entre cada elemento*/
+	line-height: 1rem; /* Altura de cada bloque */
+	font-size: 1rem; /* Tamaño del texto */
+}
+.vino {
+  position: inline;
+	background-color: white;
+	padding-bottom: 0rem; /* Para ocultar la linea inferior de puntos */
+  font-size: 120%
+}
+.precio {
+	position: absolute;
+	text-align: right;
+  bottom: 0;
+  right: 0;
+	background-color: white;
+}
+.detalls_vi{
+	font-size: 0.75rem;
+	color: #000000;
+	border-bottom: hidden;
+	padding: 0px;
+}
