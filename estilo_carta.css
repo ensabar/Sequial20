@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* CSS Document */
+/* resetea todas las variables de CSS */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	position: relative;
+}
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body{
+	font-family: 'Didact Gothic', sans-serif;
+}
+p{
+	display: block;
+	background-color: white;
+	width:95%;
+  min-width: 300px;
+	margin: auto; /* Para centrar el texto*/
+	margin-bottom: 0.75rem; /* Margen entre cada elemento*/
+	line-height: 1.25rem; /* Altura de cada bloque */
+	font-size: 1.2rem; /* Tamaño del texto */
+}
+
+.descripcion{
+  position: inline;
+	background-color: white;
+}
+.precio {
+	position: absolute;
+	text-align: right;
+  bottom: 0;
+  right: 0;
+	background-color: white;
+}
+
+.detalls_ingredients{
+	font-size: 0.8rem;
+	color: #000000;
+}
+.gluten{
+	text-align: center;
+}
+.menu{
+	width: 90%;
+	margin: auto;
+	text-align: left;
+}
+.menu li{
+	padding-left: 5vw;
+	font-size: 120%;
+
+}
+.precio_menu{
+	text-align: center;
+	font-size: 300%;
+}
+.superindice {
+    vertical-align:super;            /*superindice*/
+    font-size:75%;
+}
+/* Para crear las filas y columnas */
+.column {
+    float: left;
+    width: 50%;
+		vertical-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.cursiva{
+	font-style: italic;
+	font-size: 75%;
+}
