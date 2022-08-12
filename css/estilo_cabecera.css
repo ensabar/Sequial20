@@ -1,93 +1,145 @@
-@charset "UTF-8";
-/* CSS Document */
-/* resetea todas las variables de CSS */
-*{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-}
-/* CSS de la barra de navegacion */
-.topnav {
-  overflow: hidden;
-  position: relative; 
-}
-.topnav #nav_bar {
-  opacity:0.75;
-  background-color: #7E3E07;
-  display: none;/* Oculta la nav_bar inicialmente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.topnav a {
-  color: white;
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1050px;
+  height: 50vh;
+  margin: auto;
+}
+
+.navbar {
+  display:flex;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 1px 5px rgba(21, 89, 158, 0.15);
+}
+.logo{
+  display: flex;
+  width: 90%;
+  padding-left: 120px;
+}
+.logo img{
+  width: 100%;
+}
+.nav-container {
+  display: block;
+  position: relative;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a .menu-text{
   text-decoration: none;
-  text-align: center;
-  font-size: 20px;
-  display: block;
+  color: #0e2431;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
 }
 
-/* Estilo del icono del menu */
-.topnav a.icon {
-  background: #7E3E07;
-  opacity: 0.75;
-  display: block;
+.navbar .nav-container a:hover{
+    font-weight: bolder;
+}
+
+.nav-container .checkbox {
   position: absolute;
-  padding: 14px 16px; /* Arriba y abajo, izq y dcha*/
-  right: 0;
-  top: 0;
-  border-radius: 5px;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 38px;
+  left: 35px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
 }
 
-#nav_bar a:hover {
-  background-color: #ddd;
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #7E3E07;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  height: 50vh;
+  width: 100%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  /*margin-left: -40px;*/
+  /*padding-left: 50px;*/
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  background-color: rgb(220, 220, 220,0.8);
+
+}
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
   color: black;
 }
-#nav_bar a{
-  padding: 6px 0px; /* Arriba y abajo, izq y dcha*/
-  border-style: solid;
-  border-top-width: 3px;
-  border-color: #47270C;
+.navbar .menu-items li a{
+  text-decoration: none;
+  color: black;
+}
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
 }
 
-.logo {
-  background-color: white;
-  color: white;
-  padding: 14px 16px; /* Arriba y abajo, izq y dcha*/
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
 }
-/* CSS para los titulos */
-h1 {
- overflow: hidden;
- text-align: center;
- font-size: 30px;
- color: #7E3E07;
-}
-h2{
-  text-align: center;
-  color: #7E3E07;
-  font-size: 24px;
-  width: 90%;
-  margin: auto;
-  border-bottom: 2px dashed #7E3E07;
-  }
 
-/* Para añadir las lineas al lado de los titulos */
-h1:before, h1:after {
- background-color: #7E3E07;
- content: "";
- display: inline-block;
- height: 1px;
- position: relative;
- vertical-align: middle;
- width: 15%;
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
 }
-h1:before {
- right: 0.5em;
- margin-left: -30%;
-}
-h1:after {
- left: 0.5em;
- margin-right: -30%;
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
 }

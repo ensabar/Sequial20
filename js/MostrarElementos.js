@@ -260,7 +260,7 @@ const entrepans = [
     },
     {
         id: 43,
-        nombre: "Calamars a la romana amb maionesa de lima",
+        nombre: "Calamars romana amb maionesa de lima",
         precio: 7.00.toPrecision(3),
         alergeno: "1,3,6,14",
     },

@@ -2,44 +2,46 @@
 
 <html lang="es">
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meat name="description" content="Página restaurante Sequial20" /> <!-- Temática -->
-  <meat name="keywords" content="bar, cafeteria, restaurante, sueca, arroz, paella" />
-  <!-- Palabras claves para busqueda -->
-  <!-- Para adaptar la pagina web a los dispositivos, adapta el tamanyo del dispositivo  -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/estilo_cabecera.css">
-  <link rel="stylesheet" href="css/estilo_carta.css" />
-  <!-- Carga el icono de la libreria para tener el menu desplegable-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Tipografia de la web, de google -->
-  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-  <!-- Hay que actualizar el codigo CSS -->
-  <!-- Hay que actualizar el codigo CSS -->
-
-  <title>Carta</title>
-
-</head>
+  <head>
+    <meat name = "description" content="Página restaurante Sequial20"/> <!-- Temática -->
+    <meat name = "keywords" content="bar, cafeteria, restaurante, sueca, arroz, paella"/> <!-- Palabras claves para busqueda -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  
+    <!-- Para adaptar la pagina web a los dispositivos, adapta el tamanyo del dispositivo  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>CARTA</title>
+    <link rel="stylesheet" href="css/estilo_cabecera.css">
+    <link rel="stylesheet" href="css/estilo_carta.css"/>
+    
+    <!-- Tipografia de la web, de google -->
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">	<!-- Hay que actualizar el codigo CSS -->
+  </head>
 
 <body>
-  <div class="topnav">
-    <a href="#" class="logo"><img src="img/LOGO.png" alt="Logo SQ20" width=75%;></a>
+  <nav>
+		<div class="navbar">
+			
+			<div class="container nav-container">
+				<div class="logo"><a href="index.html"><img  src="img/LOGO.png" alt="Logo SQ20"></a></div>
+				<input class="checkbox" type="checkbox" name="" id=""/>
 
-    <div id="nav_bar">
-      <a href="index.html">INICI</a>
-      <a href="CARTA.html">CARTA</a>
-      <a href="MENU.html">MENU</a>
-      <a href="ESMORZARS.html">ESMORZARS</a>
-      <a href="BODEGA.html">BODEGA</a>
-    </div>
-    <!-- Icono del menu. Oculto por defecto -->
-    <a href="javascript:void(0);" class="icon" onclick="MostrarOcultar()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <!-- Carga el fichero javascript-->
-  <script src="js/MostrarOcultar.js"></script>
+				<div class="hamburger-lines">
+					<span class="line line1"></span>
+					<span class="line line2"></span>
+					<span class="line line3"></span>
+				</div>
+				
+				<div class="menu-items"><li></li>
+					<li><a class="menu-text" href=index.html>INICI</a></li>
+					<li><a class="menu-text" href="CARTA.html">CARTA</a></li>
+					<li><a class="menu-text" href="MENU.html">MENU</a></li>
+					<li><a class="menu-text" href="ESMORZARS.html">ESMORZARS</a></li>
+					<li><a class="menu-text" href="BODEGA.html">BODEGA</a></li>
+				</div>
+			</div>
+		</div>
+	</nav>
 
   <h1>TAPES</h1>
 
