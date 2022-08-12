@@ -5,7 +5,10 @@
 body{
 	font-family: 'Didact Gothic', sans-serif;
 }
-
+h1{
+	text-align: center;
+	color:#7E3E07;
+}
 /* CSS correspondiente a CARTA.html  */
 article{
 	display: inline-block;
@@ -15,24 +18,23 @@ article > div.descripcion{
 	float:left;
 	margin-left: 10px;
 }
-article > div.precio{
-	float: right;
-	margin-right: 10px;
-}
+
 article > div.descripcion sup {
 	font-size: 12px;
 }
 
 .descripcion{
   position: inline;
-	background-color: white;
+	
 }
 .precio {
-	position: absolute;
+	float: right;
+	margin-right: 10px;
+	position: inline-block;
 	text-align: right;
     bottom: 0;
     right: 0;
-	background-color: white;
+	
 }
 
 .detalls_ingredients{
@@ -68,7 +70,7 @@ article > div.descripcion sup {
 	font-size: 120%;
 
 }
-.menu-precio{
+.precio_menu{
 	text-align: center;
 	padding-top: 1.5vw;
 	font-size: 52px;
@@ -91,4 +93,18 @@ article > div.descripcion sup {
     content: "";
     display: table;
     clear: both;
+}
+
+.google-maps{
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	width: 100%;
+	display: inline-block;
+}
+.horari{
+	font-size: 16px;
+	text-align: center;
+	/*border: 2px dotted green;*/
+	margin-left: 10vw;
+	margin-right: 10vw;
 }
