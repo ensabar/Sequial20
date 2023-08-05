@@ -108,3 +108,7 @@ article > div.descripcion sup {
 	margin-left: 10vw;
 	margin-right: 10vw;
 }
+
+div[class^="contenedor-"]{ 
+    margin-left: 8px;
+}
