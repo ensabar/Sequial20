@@ -24,7 +24,8 @@ article > div.descripcion sup {
 }
 
 .descripcion{
-  position: inline;
+	margin: 5px;
+  	position: inline;
 	
 }
 .precio {
@@ -38,6 +39,7 @@ article > div.descripcion sup {
 }
 
 .detalls_ingredients{
+	margin: 5px;
 	font-size: 0.8rem;
 	color: #000000;
 }
