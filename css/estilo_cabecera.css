@@ -40,7 +40,7 @@ nav {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: white; /* Cambiado al color principal de la empresa */
+        background-color: rgb(218, 218, 218); /* Cambiado al color principal de la empresa */
         position: absolute;
         top: 70px;
         right: 0;
@@ -69,7 +69,7 @@ nav {
         padding: 10px 0px; /* Añade espacio alrededor del texto para centrarlo verticalmente */
     }
     .menu li:active{
-        background-color: rgb(218, 218, 218);/* Cambia el color al hacer clic */
+        background-color: rgb(171, 171, 171);/* Cambia el color al hacer clic */
     }
 
     .menu-icon .bar {

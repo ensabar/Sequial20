@@ -10,13 +10,15 @@ h1{
 	color: #482414;
 }
 /* CSS correspondiente a CARTA.html  */
+p {
+	margin: 5px;
+}
 article{
 	display: inline-block;
 	width:100%;
 }
 article > div.descripcion{
 	float:left;
-	margin-left: 10px;
 }
 
 article > div.descripcion sup {
