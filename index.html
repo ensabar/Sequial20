@@ -14,32 +14,36 @@
 	<link rel="stylesheet" href="css/estilo_cabecera.css">
 	<link rel="stylesheet" href="css/estilo_carta.css"/>
 	<!-- Tipografia de la web, de google -->
-<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">	<!-- Hay que actualizar el codigo CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">	<!-- Hay que actualizar el codigo CSS -->
 </head>
 <body>
 	<nav>
-		<div class="navbar">
-			
-			<div class="container nav-container">
-				<div class="logo"><a href=#.html><img href="index.html" src="img/LOGO.svg" alt="Logo SQ20"></a></div>
-				<input class="checkbox" type="checkbox" name="" id="" />
-
-				<div class="hamburger-lines">
-					<span class="line line1"></span>
-					<span class="line line2"></span>
-					<span class="line line3"></span>
-				</div>
-				
-				<div class="menu-items"><li></li>
-					<li><a class="menu-text" href=index.html>INICI</a></li>
-					<li><a class="menu-text" href="CARTA.html">CARTA</a></li>
-					<li><a class="menu-text" href="MENU.html">MENU</a></li>
-					<li><a class="menu-text" href="ESMORZARS.html">ESMORZARS</a></li>
-					<li><a class="menu-text" href="BODEGA.html">BODEGA</a></li>
-				</div>
-			</div>
-		</div>
-	</nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/LOGO.svg"  alt="Logo del Restaurante"></a>
+        </div>
+        <div class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+			<li><a href="index.html">INICI</a></li>
+			<li><a href="CARTA.html">CARTA</a></li>
+			<li><a href="MENU.html">MENU</a></li>
+			<li><a href="ESMORZARS.html">ESMORZARS</a></li>
+			<li><a href="BODEGA.html">BODEGA</a></li>
+        </ul>
+    </nav>
+	<script>
+		const menuIcon = document.querySelector('.menu-icon');
+		const menu = document.querySelector('.menu');
+		
+		menuIcon.addEventListener('click', () => {
+		    menu.classList.toggle('active');
+		    menuIcon.classList.toggle('active'); // Agregamos o eliminamos la clase 'active' al menu-icon
+		});
+	
+	</script>
 <!-- <div class="detalles">
 	<h1>El Sequial20</h1>
 	<p style="text-align: center;">El restaurant Sequial20 està situat a Sueca, capital de la Ribera Baixa. </p>
@@ -92,5 +96,6 @@
 		<!-- <div class="footer">
 			<p>Peu de pagina, incloure el FB i algo més</p>
 		</div> -->
+		
 </body>
 </html>
