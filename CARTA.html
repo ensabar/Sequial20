@@ -17,34 +17,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">	<!-- Hay que actualizar el codigo CSS -->
 </head>
 <body>
-	<nav>
-		<div class="navbar">
-			
-			<div class="container nav-container">
-				<div class="logo"><a href=#.html><img href="index.html" src="img/LOGO.png" alt="Logo SQ20"></a></div>
-				<input class="checkbox" type="checkbox" name="" id="" />
+	<body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="img/LOGO.svg"  alt="Logo del Restaurante"></a>
+      </div>
+      <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+      </div>
+      <ul class="menu">
+    <li><a href="index.html">INICI</a></li>
+    <li><a href="CARTA.html">CARTA</a></li>
+    <li><a href="MENU.html">MENU</a></li>
+    <li><a href="ESMORZARS.html">ESMORZARS</a></li>
+    <li><a href="BODEGA.html">BODEGA</a></li>
+      </ul>
+  </nav>
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const menu = document.querySelector('.menu');
 
-				<div class="hamburger-lines">
-					<span class="line line1"></span>
-					<span class="line line2"></span>
-					<span class="line line3"></span>
-				</div>
-				
-				<div class="menu-items"><li></li>
-					<li><a class="menu-text" href=index.html>INICI</a></li>
-					<li><a class="menu-text" href="CARTA.html">CARTA</a></li>
-					<li><a class="menu-text" href="MENU.html">MENU</a></li>
-					<li><a class="menu-text" href="ESMORZARS.html">ESMORZARS</a></li>
-					<li><a class="menu-text" href="BODEGA.html">BODEGA</a></li>
-				</div>
-			</div>
-		</div>
-	</nav>
+  menuIcon.addEventListener('click', () => {
+  menu.classList.toggle('active');
+  });
+</script>
 
   <h1>TAPES</h1>
- <p>
+<p>
   <span class="descripcion">Pa gallec amb salmorejo <sup>1</sup></span>
   <span class="precio">3.00</span>
+</p>
+<p>
+  <span class="descripcion">Pa gallec amb tomaca i allioli <sup>1</sup></span>
+  <span class="precio">4.50</span>
 </p>
 <p>
   <span class="descripcion">Ensaladilla rusa amb xips de cereals<sup>1,3,4,6</sup></span>
@@ -90,7 +97,7 @@
 </p>
 <p>
   <span class="descripcion">Calamars a la romana  amb allioli de lima i maionesa de tinta<sup>1,3,14</sup></span>
-  <span class="precio">8.00</span>
+  <span class="precio">8.50</span>
 </p>
 <p>
   <span class="descripcion">Mandonguilles d'abadejo (8ud.)<sup>1,3,4,6,7,10,13</sup></span>
@@ -98,7 +105,7 @@
 </p>
 <p>
   <span class="descripcion">Croquetons de pernil (6ud.)<sup>1,2,3,4,6,7,8,13</sup></span>
-  <span class="precio">9.00</span>
+  <span class="precio">10.00</span>
 </p>
 <p>
   <span class="descripcion">Combinat de croquetes de xipirons, pollastre de corral i rabo de bou (3 ud/cada)
@@ -129,7 +136,12 @@
 
 <p>
   <span class="descripcion">Amanida de la casa<sup>5,8,11</sup></span>
-  <span class="precio">12.00</span>
+  <span class="precio">13.50</span>
+</p>
+<p class="detalls_ingredients">Brots tendres, confit d'ànec, foie, fruits secs, tomaca cherry i vinagretes</p>
+<p>
+  <span class="descripcion">Amanida de burrata, mezclum, fruits secs, pernil i pesto d'alfàbrega<sup>5,8,11</sup></span>
+  <span class="precio">12.50</span>
 </p>
 <p class="detalls_ingredients">Brots tendres, confit d'ànec, foie, fruits secs, tomaca cherry i vinagretes</p>
 <p>
@@ -183,7 +195,7 @@
 <p class="detalls_ingredients">Amb salsa roquefort o de pimienta</p>
 <p>
   <span class="descripcion">Delícies de confit d'ànec amb salsa <br> d'Oporto<sup>1,13</sup></span>
-  <span class="precio">10.50</span>
+  <span class="precio">12.00</span>
 </p>
 <p class="gluten">Tots els plats porten creïlles i verdures de temporada de guarnició</p>
 
@@ -198,7 +210,7 @@
 </p>
 <p>
   <span class="descripcion">Lluç a la planxa<sup>1,3,4,6</sup></span>
-  <span class="precio">9.00</span>
+  <span class="precio">10.00</span>
 </p>
 <p>
   <span class="descripcion">Sèpia planxa amb salsa mery<sup>1,3,6,14</sup></span>
@@ -206,11 +218,11 @@
 </p>
 <p>
   <span class="descripcion">Llobarro a l'esquena<sup>1,4</sup></span>
-  <span class="precio">12.00</span>
+  <span class="precio">13.00</span>
 </p>
 <p>
   <span class="descripcion">Gambons a la planxa (5ud.)</span>
-  <span class="precio">10.00</span>
+  <span class="precio">12.00</span>
 </p>
 
 <p class="gluten">Tots els plats porten creïlles i verdures de temporada de guarnició</p>
@@ -222,7 +234,7 @@
 
 <p>
   <span class="descripcion">Sèpia planxa<sup>1,3,6,14</sup></span>
-  <span class="precio">7.50</span>
+  <span class="precio">8.50</span>
 </p>
 <p>
   <span class="descripcion">Puntilla arrebossada<sup>1</sup></span>
@@ -238,11 +250,11 @@
 </p>
 <p>
   <span class="descripcion">Xivi-pollo<sup>1,3,6</sup></span>
-  <span class="precio">7.00</span>
+  <span class="precio">7.50</span>
 </p>
 <p>
   <span class="descripcion">Brascada<sup>1</sup></span>
-  <span class="precio">7.50</span>
+  <span class="precio">8.00</span>
 </p>
 <p>
   <span class="descripcion">Carn de cavall amb alls tendres i creïlles<sup>1</sup></span>
@@ -297,17 +309,17 @@
 <p class="detalls_ingredients">Tomaca, enciam, beicon, formatge i ou</p>
 <p>
   <span class="descripcion">Sandvitx mixte<sup>1,6,7</sup></span>
-  <span class="precio">4.00</span>
+  <span class="precio">4.50</span>
 </p>
 <p class="detalls_ingredients">Pernil dolç i formatge</p>
 <p>
   <span class="descripcion">Sandvitx vegetal<sup>1,3,6</sup></span>
-  <span class="precio">5.00</span>
+  <span class="precio">5.50</span>
 </p>
 <p class="detalls_ingredients">Enciam, tomaca, espàrrec blanc, dacsa, ou, tonyina i maionesa</p>
 <p>
   <span class="descripcion">Sandvitx de pollastre<sup>1,3,6</sup></span>
-  <span class="precio">6.50</span>
+  <span class="precio">7.00</span>
 </p>
 <p class="detalls_ingredients">Enciam, tomaca, pit de pollastre i maionesa</p>
 
@@ -400,21 +412,21 @@
 <h1>ARROSSOS</h1>
 <p>
   <span class="descripcion">Paella Valenciana del concurs de Sueca<sup></sup></span>
-  <span class="precio">16.00</span>
+  <span class="precio">16.50</span>
 </p>
 <p class="detalls_ingredients">1º Premi Local Sueca 2019</p>
 <p class="detalls_ingredients">1º Millor Paella Valenciana del món 2023</p>
 <p>
   <span class="descripcion">Paella de pollastre i costella</span>
-  <span class="precio">12.00</span>
+  <span class="precio">13.00</span>
 </p>
 <p>
   <span class="descripcion">Arros al forn</span>
-  <span class="precio">11.00</span>
+  <span class="precio">12.00</span>
 </p>
 <p>
   <span class="descripcion">Arros de confit d'ànec</span>
-  <span class="precio">13.00</span>
+  <span class="precio">14.50</span>
 </p>
 <p>
   <span class="descripcion">All i pebre</span>
@@ -422,7 +434,7 @@
 </p>
 <p>
   <span class="descripcion">Arros allipebrat del senyoret</span>
-  <span class="precio">14.00</span>
+  <span class="precio">15.00</span>
 </p>
 <p>
   <span class="descripcion">Arros de secret ibèric amb bolets i alls tendres</span>
@@ -430,11 +442,11 @@
 </p>
 <p>
   <span class="descripcion">Arros caldós amb fesols i nap</span>
-  <span class="precio">12.00</span>
+  <span class="precio">15.00</span>
 </p>
 <p>
   <span class="descripcion">Arros del senyoret</span>
-  <span class="precio">12.00</span>
+  <span class="precio">14.00</span>
 </p>
 <p class="detalls_ingredients">"1º Premi Bétera 2018"</p>
 <p>
@@ -443,7 +455,7 @@
 </p>
 <p>
   <span class="descripcion">Arros negre</span>
-  <span class="precio">13.00</span>
+  <span class="precio">14.50</span>
 </p>
 <p>
   <span class="descripcion">Arros de bogavant</span>
@@ -451,7 +463,7 @@
 </p>
 <p>
   <span class="descripcion">Arros de sèpia, rap i alls tendres</span>
-  <span class="precio">13.00</span>
+  <span class="precio">14.00</span>
 </p>
 <p>
   <span class="descripcion">Arros de marisc</span>
@@ -463,11 +475,11 @@
 </p>
 <p>
   <span class="descripcion">Paella mixta</span>
-  <span class="precio">14.00</span>
+  <span class="precio">15.00</span>
 </p>
 <p>
   <span class="descripcion">Fideua</span>
-  <span class="precio">12.00</span>
+  <span class="precio">14.00</span>
 </p>
 
 <p class="gluten">Paelles per encàrrec</p>

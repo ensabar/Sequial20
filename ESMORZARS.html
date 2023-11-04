@@ -16,29 +16,32 @@
 <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">	<!-- Hay que actualizar el codigo CSS -->
 </head>
 <body>
-	<nav>
-		<div class="navbar">
-			
-			<div class="container nav-container">
-				<div class="logo"><a href="index.html"><img  src="img/LOGO.png" alt="Logo SQ20"></a></div>
-				<input class="checkbox" type="checkbox" name="" id="" />
-
-				<div class="hamburger-lines">
-					<span class="line line1"></span>
-					<span class="line line2"></span>
-					<span class="line line3"></span>
-				</div>
-				
-				<div class="menu-items"><li></li>
-					<li><a class="menu-text" href=index.html>INICI</a></li>
-					<li><a class="menu-text" href="CARTA.html">CARTA</a></li>
-					<li><a class="menu-text" href="MENU.html">MENU</a></li>
-					<li><a class="menu-text" href="ESMORZARS.html">ESMORZARS</a></li>
-					<li><a class="menu-text" href="BODEGA.html">BODEGA</a></li>
-				</div>
+	<body>
+		<nav>
+			<div class="logo">
+				<a href="index.html"><img src="img/LOGO.svg"  alt="Logo del Restaurante"></a>
 			</div>
-		</div>
-	</nav>
+			<div class="menu-icon">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+			<ul class="menu">
+				<li><a href="index.html">INICI</a></li>
+				<li><a href="CARTA.html">CARTA</a></li>
+				<li><a href="MENU.html">MENU</a></li>
+				<li><a href="ESMORZARS.html">ESMORZARS</a></li>
+				<li><a href="BODEGA.html">BODEGA</a></li>
+			</ul>
+		</nav>
+		<script>
+			const menuIcon = document.querySelector('.menu-icon');
+			const menu = document.querySelector('.menu');
+	
+			menuIcon.addEventListener('click', () => {
+			menu.classList.toggle('active');
+			});
+		</script>
 
 <p class="gluten" style="padding-top: 2vw;">De Dilluns a Diumenge 9:00h a 12:00h</p>
 <p class="gluten">DISPOSEM DE PA SENSE GLUTEN (SUPLEMENT 1€)</p>
@@ -46,7 +49,7 @@
 
 <h1>ENTREPANS</h1>
 
-<div class="menu">
+<div class="menu-entrepans">
 	<li>Pernil a la catalana</li>
 	<li>Pernil i formatge manxec</li>
 	<li>Sobrassada amb formatge i ceba</li>
@@ -70,11 +73,11 @@
 </div>
 <p class="gluten">Inclou: 1 beguda i café</p>
 <p class="gluten" style="padding-bottom: 2vw;">*INGREDIENT EXTRA 1.00€</p>
-<p class="precio_menu" style="padding-top: 1.5vw;">6.50€</p>
-<p class="gluten">MIG ENTREPÀ 5.50€</p>
+<p class="precio_menu" style="padding-top: 1.5vw;">7.00€</p>
+<p class="gluten">MIG ENTREPÀ 6.00€</p>
 
 	<h1>ESPECIALS</h1>
-<div class="menu">
+<div class="menu-entrepans">
 	<li>Sèpia amb allada</li>
 	<li>Puntilla arrebossada</li>
 	<li>Carn de cavall amb creïlles i alls tendres</li>
@@ -87,9 +90,7 @@
 <p class="gluten">Inclou: 1 beguda i café</p>
 <p class="gluten" style="padding-bottom: 2vw;">*INGREDIENT EXTRA 1.00€</p>
 
-<p class="precio_menu" style="padding-top: 1.5vw;">7.50€</p>
-<p class="gluten">MIG ENTREPÀ 6.50€</p>
-
+<p class="precio_menu" style="padding-top: 1.5vw;">8.00€</p>
 
 
 </body>

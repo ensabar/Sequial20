@@ -1,100 +1,114 @@
-<!DOCTYPE html> <!--  -->
+<!DOCTYPE html>
+<!--  -->
 <html>
-	<head>
-		<meat name = "description" content="Página restaurante Sequial20"/> <!-- Temática -->
-		<meat name = "keywords" content="bar, cafeteria, restaurante, sueca, arroz, paella"/> <!-- Palabras claves para busqueda -->
-	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	
-		<!-- Para adaptar la pagina web a los dispositivos, adapta el tamanyo del dispositivo  -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<title>BODEGA</title>
-		<link rel="stylesheet" href="css/estilo_cabecera.css">
-		<link rel="stylesheet" href="css/estilo_carta.css"/>
-		
-		<!-- Tipografia de la web, de google -->
-	<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">	<!-- Hay que actualizar el codigo CSS -->
-	</head>
-<body>
-	<nav>
-		<div class="navbar">
-			
-			<div class="container nav-container">
-				<div class="logo"><a href="index.html"><img  src="img/LOGO.png" alt="Logo SQ20"></a></div>
-				<input class="checkbox" type="checkbox" name="" id="" />
+  <head>
+    <meat name="description" content="Página restaurante Sequial20" />
+    <!-- Temática -->
+    <meat
+      name="keywords"
+      content="bar, cafeteria, restaurante, sueca, arroz, paella"
+    />
+    <!-- Palabras claves para busqueda -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-				<div class="hamburger-lines">
-					<span class="line line1"></span>
-					<span class="line line2"></span>
-					<span class="line line3"></span>
-				</div>
-				
-				<div class="menu-items"><li></li>
-					<li><a class="menu-text" href=index.html>INICI</a></li>
-					<li><a class="menu-text" href="CARTA.html">CARTA</a></li>
-					<li><a class="menu-text" href="MENU.html">MENU</a></li>
-					<li><a class="menu-text" href="ESMORZARS.html">ESMORZARS</a></li>
-					<li><a class="menu-text" href="BODEGA.html">BODEGA</a></li>
-				</div>
-			</div>
-		</div>
-	</nav>
+    <!-- Para adaptar la pagina web a los dispositivos, adapta el tamanyo del dispositivo  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<h1>BLANCS</h1>
+    <title>BODEGA</title>
+    <link rel="stylesheet" href="css/estilo_cabecera.css" />
+    <link rel="stylesheet" href="css/estilo_carta.css" />
 
-<div class="contenedor-vi-blanc">
-	<p>
-		<span class="descripcion">Cyatho Verdejo</span>
-		<span class="precio">12.00</span>
-	</p>
-   <p class="detalls_ingredients">D.O. Rueda</p>
-   <p>
-	<span class="descripcion">Fdez. de Pierola Tempranillo Blanco</span>
-	<span class="precio">11.50</span>
-	</p>
-	<p class="detalls_ingredients">D.O. Rioja</p>
-	<p>
-		<span class="descripcion">Finca del Mar Verdejo</span>
-		<span class="precio">12.50</span>
-	</p>
-  	<p class="detalls_ingredients">D.O. València</p>
+    <!-- Tipografia de la web, de google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hay que actualizar el codigo CSS -->
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img/LOGO.svg" alt="Logo del Restaurante"
+        /></a>
+      </div>
+      <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">INICI</a></li>
+        <li><a href="CARTA.html">CARTA</a></li>
+        <li><a href="MENU.html">MENU</a></li>
+        <li><a href="ESMORZARS.html">ESMORZARS</a></li>
+        <li><a href="BODEGA.html">BODEGA</a></li>
+      </ul>
+    </nav>
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const menu = document.querySelector(".menu");
 
-	<p>
-		<span class="descripcion">Murviedro Chardonnay</span>
-		<span class="precio">14.50</span>
-	</p>
-  	<p class="detalls_ingredients">D.O. València</p>
+      menuIcon.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
 
-	  <p>
-		<span class="descripcion">Nodus Chardonnay</span>
-		<span class="precio">17.50</span>
-	</p>
-  	<p class="detalls_ingredients">D.O. Utiel i Requena</p>
-	<!--<p>
+    <h1>BLANCS</h1>
+
+    <div class="contenedor-vi-blanc">
+      <p>
+        <span class="descripcion">Cyatho Verdejo</span>
+        <span class="precio">12.00</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Rueda</p>
+      <p>
+        <span class="descripcion">Fdez. de Pierola Tempranillo Blanco</span>
+        <span class="precio">11.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Rioja</p>
+      <p>
+        <span class="descripcion">Finca del Mar Verdejo</span>
+        <span class="precio">12.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. València</p>
+
+      <p>
+        <span class="descripcion">Murviedro Chardonnay</span>
+        <span class="precio">14.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. València</p>
+
+      <p>
+        <span class="descripcion">Nodus Chardonnay</span>
+        <span class="precio">17.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Utiel i Requena</p>
+      <!--<p>
 		<span class="descripcion">Nebla Verdejo</span>
 		<span class="precio">13.00</span>
 	</p>
   	<p class="detalls_ingredients">D.O. Vino de la tierra de Castilla y León</p>  -->
-	<p>
-		<span class="descripcion">Protos Verdejo</span>
-		<span class="precio">15.50</span>
-	</p>
-  	<p class="detalls_ingredients">D.O. Rueda</p>
-	  <p>
-		<span class="descripcion">Atlantis Albariño</span>
-		<span class="precio">15.00</span>
-	</p>
-  	<p class="detalls_ingredients">D.O. Rias Baixas</p>
-	<!--<p>
+      <p>
+        <span class="descripcion">Protos Verdejo</span>
+        <span class="precio">15.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Rueda</p>
+      <p>
+        <span class="descripcion">Atlantis Albariño</span>
+        <span class="precio">15.00</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Rias Baixas</p>
+      <!--<p>
 		<span class="descripcion">Blanc de blancs</span>
 		<span class="precio">15.00</span>
 	</p>
   	<p class="detalls_ingredients">D. O. Penedès</p> -->
-</div>
+    </div>
 
-<h1>TINTOS</h1>
-<div class="contenedor-vi-negre">
-<!--<p>
+    <h1>TINTOS</h1>
+    <div class="contenedor-vi-negre">
+      <!--<p>
 	<span class="descripcion">Juan de Juanes</span>
 	<span class="precio">12.50</span>
 </p>
@@ -104,98 +118,94 @@
 	<span class="precio">12.00</span>
 </p>
   <p class="detalls_ingredients">D.O Utiel i Requena</p> -->
-<p>
-	<span class="descripcion">Murviedro Crianza</span>
-	<span class="precio">15.50</span>
-</p>
-<p class="detalls_ingredients">D.O. València</p>
-<p>
-	<span class="descripcion">Tamaral</span>
-	<span class="precio">16.00</span>
-</p>
-<p class="detalls_ingredients">Ribera del Duero</p>
-<p>
-	<span class="descripcion">Viña Pomal Tempranillo</span>
-	<span class="precio">17.00</span>
-</p>
-  <p class="detalls_ingredients">D.O Rioja</p>
-<p>
-	<span class="descripcion">Traslascuestas Roble</span>
-	<span class="precio">16.50</span>
-</p>
-<p class="detalls_ingredients">D.O. Ribera del Duero</p>
-<p>
-	<span class="descripcion">Fdez. de Pierola Crianza</span>
-	<span class="precio">17.50</span>
-</p>
-<p class="detalls_ingredients">D.O. Rioja</p>
-<p>
-	<span class="descripcion">BO Bobal</span>
-	<span class="precio">15.50</span>
-</p>
-  <p class="detalls_ingredients">D.O Utiel i Requena</p>
-<!--  <p>
+      <p>
+        <span class="descripcion">Murviedro Crianza</span>
+        <span class="precio">15.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. València</p>
+      <p>
+        <span class="descripcion">Tamaral</span>
+        <span class="precio">16.00</span>
+      </p>
+      <p class="detalls_ingredients">Ribera del Duero</p>
+      <p>
+        <span class="descripcion">Viña Pomal Tempranillo</span>
+        <span class="precio">17.00</span>
+      </p>
+      <p class="detalls_ingredients">D.O Rioja</p>
+      <p>
+        <span class="descripcion">Traslascuestas Roble</span>
+        <span class="precio">16.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Ribera del Duero</p>
+      <p>
+        <span class="descripcion">Fdez. de Pierola Crianza</span>
+        <span class="precio">17.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Rioja</p>
+      <p>
+        <span class="descripcion">BO Bobal</span>
+        <span class="precio">15.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O Utiel i Requena</p>
+      <!--  <p>
 	<span class="descripcion">Granza Tempranillo</span>
 	<span class="precio">12.00</span>
 </p>
   <p class="detalls_ingredients">D.O. Ribera del Duero</p> -->
-  <p>
-	<span class="descripcion">Legaris Roble</span>
-	<span class="precio">17.00</span>
-</p>
-  <p class="detalls_ingredients">D.O. Ribera del Duero</p>
-  <p>
-	<span class="descripcion">Protos Roble</span>
-	<span class="precio">18.00</span>
-</p>
-<p class="detalls_ingredients">D.O. Ribera del Duero</p>
-<!--<p>
+      <p>
+        <span class="descripcion">Legaris Roble</span>
+        <span class="precio">17.00</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Ribera del Duero</p>
+      <p>
+        <span class="descripcion">Protos Roble</span>
+        <span class="precio">18.00</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Ribera del Duero</p>
+      <!--<p>
 	<span class="descripcion">Nodus Merlot Delirium</span>
 	<span class="precio">17.50</span>
 </p>
 <p class="detalls_ingredients">D.O. Utiel i Requena</p> -->
-<p>
-	<span class="descripcion">Traslascuestas Crianza</span>
-	<span class="precio">27.00</span>
-</p>
-<p class="detalls_ingredients">D.O. Ribera del Duero</p>
-<!--<p>
+      <p>
+        <span class="descripcion">Traslascuestas Crianza</span>
+        <span class="precio">27.00</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Ribera del Duero</p>
+      <!--<p>
 	<span class="descripcion">Pago de los Capellanes Joven Roble</span>
 	<span class="precio">26.50</span>
 </p>
   <p class="detalls_ingredients">D.O. Ribera del Duero</p> -->
-</div>
+    </div>
 
-  <h1>ROSATS</h1>
-  <div class="contenedor-vi-rosat">
-	<p>
-		<span class="descripcion">Traslascuestas Rosado</span>
-		<span class="precio">12.50</span>
-		</p>
-		<p class="detalls_ingredients">D.O. Ribera del duuero</p>
-  </div>
-  
-  	
+    <h1>ROSATS</h1>
+    <div class="contenedor-vi-rosat">
+      <p>
+        <span class="descripcion">Traslascuestas Rosado</span>
+        <span class="precio">12.50</span>
+      </p>
+      <p class="detalls_ingredients">D.O. Ribera del duuero</p>
+    </div>
 
-<h1>CAVA</h1>
-	<div class="contenedor-cava">
-		<p>
-			<span class="descripcion">Roger de Flor</span>
-			<span class="precio">15.00</span>
-		</p>
-		  <p class="detalls_ingredients">Brut Nature</p>
-		<p>
-			<span class="descripcion">Juve Camps Reserva familiar</span>
-			<span class="precio">30.00</span>
-		</p>
-		<p class="detalls_ingredients">Brut Nature</p>
-		<p>
-			<span class="descripcion">Murviedro Organic</span>
-			<span class="precio">18.00</span>
-		</p>
-		<p class="detalls_ingredients">Brut Nature</p>
-	</div>
-
-
-</body>
+    <h1>CAVA</h1>
+    <div class="contenedor-cava">
+      <p>
+        <span class="descripcion">Roger de Flor</span>
+        <span class="precio">15.00</span>
+      </p>
+      <p class="detalls_ingredients">Brut Nature</p>
+      <p>
+        <span class="descripcion">Juve Camps Reserva familiar</span>
+        <span class="precio">30.00</span>
+      </p>
+      <p class="detalls_ingredients">Brut Nature</p>
+      <p>
+        <span class="descripcion">Murviedro Organic</span>
+        <span class="precio">18.00</span>
+      </p>
+      <p class="detalls_ingredients">Brut Nature</p>
+    </div>
+  </body>
 </html>

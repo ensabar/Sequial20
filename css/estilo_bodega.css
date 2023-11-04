@@ -18,8 +18,8 @@ p{
 	display: block;
 	background-color: white;
 	width:95%;
-  /*max-width: 99%;*/
-  min-width: 300px;
+  	/*max-width: 99%;*/
+  	min-width: 300px;
 	margin: auto; /* Para centrar el texto*/
 	margin-bottom: 0.2rem; /* Margen entre cada elemento*/
 	line-height: 1rem; /* Altura de cada bloque */

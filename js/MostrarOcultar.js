@@ -1,10 +1,12 @@
- /* Intercambia el valor de la opcion display para ocultar/mostrar la barra de navegacion */
- function MostrarOcultar() {
-    var x = document.getElementById("nav_bar");
- 
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
+// Obtén los elementos necesarios
+const menuToggle = document.querySelector("#menu-toggle");
+const menuItems = document.querySelector(".menu-items");
+
+// Agrega un event listener para el botón del menú
+menuToggle.addEventListener("change", function () {
+  if (this.checked) {
+    menuItems.style.display = "block";
+  } else {
+    menuItems.style.display = "none";
   }
+});
